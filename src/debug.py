@@ -15,7 +15,7 @@ def observer(eventDict):
 
 def observer2(eventDict):
 	edm = eventDict['message']
-	if isinstance(edm, tuple): # LogEvent can be in tuple
+	if isinstance(edm, tuple) and len(edm): # LogEvent can be in tuple
 		edm = edm[0]
 	if isinstance(edm, LogEvent):
 		if edm.category == INFO and config.debugLevel < 3:
