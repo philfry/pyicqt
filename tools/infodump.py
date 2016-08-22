@@ -41,7 +41,7 @@ except:
 	print "Nevow Version: Unknown or Not Installed"
 
 try:
-	from Image import VERSION
+	from PIL.Image import VERSION
 	print "Python Imaging Library (PIL) Version: " + VERSION
 except:
 	print "Python Imaging Library (PIL) Version: Unknown or Not Installed"

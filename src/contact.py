@@ -13,7 +13,7 @@ import legacy
 import globals
 import base64
 if not config.disableAvatars:
-	import Image
+	import PIL.Image as Image
 import StringIO
 
 

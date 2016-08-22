@@ -5,7 +5,7 @@ import config
 
 if not config.disableAvatars:
 	try:
-		import Image
+		import PIL.Image as Image
 		import StringIO
 
 		def convertToPNG(imageData):
