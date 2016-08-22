@@ -70,7 +70,7 @@ class B(oscar.BOSConnection):
 		oscar.BOSConnection.connectionLost(self, reason)
 
 		try:
-			self.session.removeMe()
+			self.session.connectionLost()
 		except:
 			pass
 
